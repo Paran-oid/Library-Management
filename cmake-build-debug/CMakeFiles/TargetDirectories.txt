@@ -1,0 +1,3 @@
+/home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/CMakeFiles/Library_Management.dir
+/home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/CMakeFiles/rebuild_cache.dir
