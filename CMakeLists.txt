@@ -9,7 +9,11 @@ link_directories(${FULL_PATH_TO_MYSQL_CONNECTOR_CPP_DIR}/lib64)
 add_executable(Library_Management main.cpp
         database_interaction/database_interaction.cpp
         database_interaction/database_interaction.h
-        utilities/output.h)
+        utilities/output.h
+        utilities/input.cpp
+        utilities/input.h
+        Models/book.cpp
+        Models/book.h)
 
 link_directories(/usr/lib/x86_64-linux-gnu)
 

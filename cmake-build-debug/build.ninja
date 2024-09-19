@@ -63,6 +63,20 @@ build CMakeFiles/Library_Management.dir/database_interaction/database_interactio
   OBJECT_DIR = CMakeFiles/Library_Management.dir
   OBJECT_FILE_DIR = CMakeFiles/Library_Management.dir/database_interaction
 
+build CMakeFiles/Library_Management.dir/utilities/input.cpp.o: CXX_COMPILER__Library_Management_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/utilities/input.cpp || cmake_object_order_depends_target_Library_Management
+  DEP_FILE = CMakeFiles/Library_Management.dir/utilities/input.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc
+  OBJECT_DIR = CMakeFiles/Library_Management.dir
+  OBJECT_FILE_DIR = CMakeFiles/Library_Management.dir/utilities
+
+build CMakeFiles/Library_Management.dir/Models/book.cpp.o: CXX_COMPILER__Library_Management_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/Models/book.cpp || cmake_object_order_depends_target_Library_Management
+  DEP_FILE = CMakeFiles/Library_Management.dir/Models/book.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc
+  OBJECT_DIR = CMakeFiles/Library_Management.dir
+  OBJECT_FILE_DIR = CMakeFiles/Library_Management.dir/Models
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Library_Management
@@ -71,7 +85,7 @@ build CMakeFiles/Library_Management.dir/database_interaction/database_interactio
 #############################################
 # Link the executable Library_Management
 
-build Library_Management: CXX_EXECUTABLE_LINKER__Library_Management_Debug CMakeFiles/Library_Management.dir/main.cpp.o CMakeFiles/Library_Management.dir/database_interaction/database_interaction.cpp.o
+build Library_Management: CXX_EXECUTABLE_LINKER__Library_Management_Debug CMakeFiles/Library_Management.dir/main.cpp.o CMakeFiles/Library_Management.dir/database_interaction/database_interaction.cpp.o CMakeFiles/Library_Management.dir/utilities/input.cpp.o CMakeFiles/Library_Management.dir/Models/book.cpp.o
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/lib64  -lcurl  -lmysqlcppconn
   LINK_PATH = -L/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/lib64

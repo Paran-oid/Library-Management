@@ -1,13 +1,18 @@
 #include <iostream>
 
 #include "database_interaction/database_interaction.h"
-
 #include "utilities/output.h"
+#include "utilities/input.h"
 
 using database = database_interaction;
 
 
 int main()
 {
-    output::print("hello");
+    database::connect_to_db();
+    bool isRunning = true;
+    while(isRunning)
+    {
+        input::display_menu();
+    }
 }

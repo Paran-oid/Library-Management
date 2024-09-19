@@ -1,6 +1,7 @@
 //
 // Created by aziz on 9/18/24.
 //
+#include <iostream>
 
 #ifndef OUTPUT_H
 #define OUTPUT_H

@@ -1,9 +1,12 @@
 # ninja log v6
-2	951	1726680787226954209	CMakeFiles/Library_Management.dir/database_interaction/database_interaction.cpp.o	8c96e3b591668c65
+3	1043	1726773614107471492	CMakeFiles/Library_Management.dir/database_interaction/database_interaction.cpp.o	8c96e3b591668c65
 2	410	1726680787226954209	CMakeFiles/Library_Management.dir/utilities/output.cpp.o	3c573a80a3315552
-930	1052	1726680662649817923	Library_Management	51690023e11e545
-1	895	1726680787225954231	CMakeFiles/Library_Management.dir/main.cpp.o	5b8f6fd83c85c094
-1	42	1726680889259703376	build.ninja	6bbc785cac3574b0
-2	917	1726680889285702812	CMakeFiles/Library_Management.dir/main.cpp.o	5b8f6fd83c85c094
-2	974	1726680889285702812	CMakeFiles/Library_Management.dir/database_interaction/database_interaction.cpp.o	8c96e3b591668c65
-974	1095	1726680890257681722	Library_Management	c87d856762a7a88a
+1043	1182	1726773615147459076	Library_Management	e05a63d11729808
+2	893	1726773614106471504	CMakeFiles/Library_Management.dir/main.cpp.o	5b8f6fd83c85c094
+1	42	1726773791482212080	build.ninja	6bbc785cac3574b0
+3	453	1726773614107471492	CMakeFiles/Library_Management.dir/utilities/input.cpp.o	b718cff7dee8ea9a
+5	443	1726773995605333956	CMakeFiles/Library_Management.dir/Models/book.cpp.o	cfe6bb9b12460a54
+4	975	1726773995604333970	CMakeFiles/Library_Management.dir/main.cpp.o	5b8f6fd83c85c094
+5	1000	1726773995605333956	CMakeFiles/Library_Management.dir/database_interaction/database_interaction.cpp.o	8c96e3b591668c65
+2	454	1726774044579610196	CMakeFiles/Library_Management.dir/utilities/input.cpp.o	b718cff7dee8ea9a
+454	581	1726774045031603467	Library_Management	2b108ff8d825938d

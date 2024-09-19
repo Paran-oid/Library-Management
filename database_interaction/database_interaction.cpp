@@ -22,3 +22,8 @@ void database::connect_to_db()
     database::connection = driver->connect(HOSTNAME, USERNAME, PASSWORD);
     output::print("Connected to MySQL server");
 }
+
+std::vector<book> database_interaction::find_books()
+{
+
+}
