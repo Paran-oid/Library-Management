@@ -13,8 +13,7 @@
 class database_interaction {
 public:
     static void connect_to_db();
-    static std::vector<book> find_books();
-
+    static std::optional<std::vector<book>> find_books();
 
     static sql::mysql::MySQL_Driver *driver;
     static sql::Connection *connection;

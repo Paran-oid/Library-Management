@@ -13,7 +13,9 @@ add_executable(Library_Management main.cpp
         utilities/input.cpp
         utilities/input.h
         Models/book.cpp
-        Models/book.h)
+        Models/book.h
+        Data/stored_data.cpp
+        Data/stored_data.h)
 
 link_directories(/usr/lib/x86_64-linux-gnu)
 

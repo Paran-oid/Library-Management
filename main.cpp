@@ -10,9 +10,6 @@ using database = database_interaction;
 int main()
 {
     database::connect_to_db();
-    bool isRunning = true;
-    while(isRunning)
-    {
-        input::display_menu();
-    }
+    input::display_menu();
+    return 0;
 }
