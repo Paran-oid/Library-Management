@@ -1,8 +1,7 @@
 #include <iostream>
 
-#include "database_interaction/database_interaction.h"
-#include "utilities/output.h"
-#include "utilities/input.h"
+#include "database_interaction.h"
+#include "input.h"
 
 using database = database_interaction;
 

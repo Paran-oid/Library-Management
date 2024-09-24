@@ -41,48 +41,116 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target database_interaction
+
+
+#############################################
+# Order-only phony target for database_interaction
+
+build cmake_object_order_depends_target_database_interaction: phony || .
+
+build CMakeFiles/database_interaction.dir/database_interaction/database_interaction.cpp.o: CXX_COMPILER__database_interaction_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/database_interaction/database_interaction.cpp || cmake_object_order_depends_target_database_interaction
+  DEP_FILE = CMakeFiles/database_interaction.dir/database_interaction/database_interaction.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/database_interaction -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/utilities -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/Models
+  OBJECT_DIR = CMakeFiles/database_interaction.dir
+  OBJECT_FILE_DIR = CMakeFiles/database_interaction.dir/database_interaction
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target database_interaction
+
+
+#############################################
+# Link the static library libdatabase_interaction.a
+
+build libdatabase_interaction.a: CXX_STATIC_LIBRARY_LINKER__database_interaction_Debug CMakeFiles/database_interaction.dir/database_interaction/database_interaction.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/database_interaction.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libdatabase_interaction.a
+  TARGET_PDB = database_interaction.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target utilities
+
+
+#############################################
+# Order-only phony target for utilities
+
+build cmake_object_order_depends_target_utilities: phony || .
+
+build CMakeFiles/utilities.dir/utilities/input.cpp.o: CXX_COMPILER__utilities_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/utilities/input.cpp || cmake_object_order_depends_target_utilities
+  DEP_FILE = CMakeFiles/utilities.dir/utilities/input.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/database_interaction -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/utilities -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/Models
+  OBJECT_DIR = CMakeFiles/utilities.dir
+  OBJECT_FILE_DIR = CMakeFiles/utilities.dir/utilities
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target utilities
+
+
+#############################################
+# Link the static library libutilities.a
+
+build libutilities.a: CXX_STATIC_LIBRARY_LINKER__utilities_Debug CMakeFiles/utilities.dir/utilities/input.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/utilities.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libutilities.a
+  TARGET_PDB = utilities.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target models
+
+
+#############################################
+# Order-only phony target for models
+
+build cmake_object_order_depends_target_models: phony || .
+
+build CMakeFiles/models.dir/Models/book.cpp.o: CXX_COMPILER__models_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/Models/book.cpp || cmake_object_order_depends_target_models
+  DEP_FILE = CMakeFiles/models.dir/Models/book.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/database_interaction -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/utilities -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/Models
+  OBJECT_DIR = CMakeFiles/models.dir
+  OBJECT_FILE_DIR = CMakeFiles/models.dir/Models
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target models
+
+
+#############################################
+# Link the static library libmodels.a
+
+build libmodels.a: CXX_STATIC_LIBRARY_LINKER__models_Debug CMakeFiles/models.dir/Models/book.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/models.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libmodels.a
+  TARGET_PDB = models.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Library_Management
 
 
 #############################################
 # Order-only phony target for Library_Management
 
-build cmake_object_order_depends_target_Library_Management: phony || .
+build cmake_object_order_depends_target_Library_Management: phony || cmake_object_order_depends_target_database_interaction cmake_object_order_depends_target_models cmake_object_order_depends_target_utilities
 
 build CMakeFiles/Library_Management.dir/main.cpp.o: CXX_COMPILER__Library_Management_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/main.cpp || cmake_object_order_depends_target_Library_Management
   DEP_FILE = CMakeFiles/Library_Management.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc
+  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/database_interaction -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/utilities -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/Models
   OBJECT_DIR = CMakeFiles/Library_Management.dir
   OBJECT_FILE_DIR = CMakeFiles/Library_Management.dir
-
-build CMakeFiles/Library_Management.dir/database_interaction/database_interaction.cpp.o: CXX_COMPILER__Library_Management_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/database_interaction/database_interaction.cpp || cmake_object_order_depends_target_Library_Management
-  DEP_FILE = CMakeFiles/Library_Management.dir/database_interaction/database_interaction.cpp.o.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc
-  OBJECT_DIR = CMakeFiles/Library_Management.dir
-  OBJECT_FILE_DIR = CMakeFiles/Library_Management.dir/database_interaction
-
-build CMakeFiles/Library_Management.dir/utilities/input.cpp.o: CXX_COMPILER__Library_Management_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/utilities/input.cpp || cmake_object_order_depends_target_Library_Management
-  DEP_FILE = CMakeFiles/Library_Management.dir/utilities/input.cpp.o.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc
-  OBJECT_DIR = CMakeFiles/Library_Management.dir
-  OBJECT_FILE_DIR = CMakeFiles/Library_Management.dir/utilities
-
-build CMakeFiles/Library_Management.dir/Models/book.cpp.o: CXX_COMPILER__Library_Management_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/Models/book.cpp || cmake_object_order_depends_target_Library_Management
-  DEP_FILE = CMakeFiles/Library_Management.dir/Models/book.cpp.o.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc
-  OBJECT_DIR = CMakeFiles/Library_Management.dir
-  OBJECT_FILE_DIR = CMakeFiles/Library_Management.dir/Models
-
-build CMakeFiles/Library_Management.dir/Data/stored_data.cpp.o: CXX_COMPILER__Library_Management_unscanned_Debug /home/aziz/Documents/Programming/Learning/C++/Library-Management/Data/stored_data.cpp || cmake_object_order_depends_target_Library_Management
-  DEP_FILE = CMakeFiles/Library_Management.dir/Data/stored_data.cpp.o.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  INCLUDES = -I/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/include/jdbc
-  OBJECT_DIR = CMakeFiles/Library_Management.dir
-  OBJECT_FILE_DIR = CMakeFiles/Library_Management.dir/Data
 
 
 # =============================================================================
@@ -92,9 +160,9 @@ build CMakeFiles/Library_Management.dir/Data/stored_data.cpp.o: CXX_COMPILER__Li
 #############################################
 # Link the executable Library_Management
 
-build Library_Management: CXX_EXECUTABLE_LINKER__Library_Management_Debug CMakeFiles/Library_Management.dir/main.cpp.o CMakeFiles/Library_Management.dir/database_interaction/database_interaction.cpp.o CMakeFiles/Library_Management.dir/utilities/input.cpp.o CMakeFiles/Library_Management.dir/Models/book.cpp.o CMakeFiles/Library_Management.dir/Data/stored_data.cpp.o
+build Library_Management: CXX_EXECUTABLE_LINKER__Library_Management_Debug CMakeFiles/Library_Management.dir/main.cpp.o | libdatabase_interaction.a libutilities.a libmodels.a || libdatabase_interaction.a libmodels.a libutilities.a
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/lib64  -lcurl  -lmysqlcppconn
+  LINK_LIBRARIES = -Wl,-rpath,/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/lib64  -lmysqlcppconn  libdatabase_interaction.a  libutilities.a  libmodels.a  -lcurl
   LINK_PATH = -L/home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++/lib64
   OBJECT_DIR = CMakeFiles/Library_Management.dir
   POST_BUILD = :
@@ -128,6 +196,12 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build database_interaction: phony libdatabase_interaction.a
+
+build models: phony libmodels.a
+
+build utilities: phony libutilities.a
+
 # =============================================================================
 # Folder targets.
 
@@ -136,7 +210,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug
 
-build all: phony Library_Management
+build all: phony libdatabase_interaction.a libutilities.a libmodels.a Library_Management
 
 # =============================================================================
 # Built-in targets

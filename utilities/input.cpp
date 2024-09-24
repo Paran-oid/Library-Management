@@ -5,7 +5,7 @@
 #include <iostream>
 #include "input.h"
 #include "output.h"
-#include "../database_interaction/database_interaction.h"
+#include "database_interaction.h"
 
 void input::display_menu()
 {
@@ -40,14 +40,17 @@ void input::display_menu()
                 break;
             }
         case 2:
-            // Placeholder for selling book logic
                 output::print("Selling book feature is under construction.");
-            break;
+                break;
         case 3:
             isRunning = false;
             break;
         default:
             output::print("Invalid choice! Please enter a valid option.");
+            break;
+        }
+        if(!isRunning)
+        {
             break;
         }
         char decision {};

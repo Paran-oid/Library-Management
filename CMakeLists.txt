@@ -3,21 +3,44 @@ project(Library_Management)
 
 set(CMAKE_CXX_STANDARD 26)
 
-set(FULL_PATH_TO_MYSQL_CONNECTOR_CPP_DIR /home/aziz/Documents/Programming/Learning/C++/Library-Management/mysql-conn-c++)
-include_directories(${FULL_PATH_TO_MYSQL_CONNECTOR_CPP_DIR}/include/jdbc)
-link_directories(${FULL_PATH_TO_MYSQL_CONNECTOR_CPP_DIR}/lib64)
-add_executable(Library_Management main.cpp
+link_directories(
+        ${CMAKE_SOURCE_DIR}/mysql-conn-c++/lib64
+
+)
+
+include_directories(
+        ${CMAKE_SOURCE_DIR}/mysql-conn-c++/include/jdbc
+        ${CMAKE_SOURCE_DIR}/database_interaction
+        ${CMAKE_SOURCE_DIR}/utilities
+        ${CMAKE_SOURCE_DIR}/Models
+)
+
+add_library(database_interaction
         database_interaction/database_interaction.cpp
         database_interaction/database_interaction.h
-        utilities/output.h
+)
+
+add_library(utilities
         utilities/input.cpp
         utilities/input.h
+        utilities/output.h
+)
+
+add_library(models
         Models/book.cpp
         Models/book.h
-        Data/stored_data.cpp
-        Data/stored_data.h)
-
-link_directories(/usr/lib/x86_64-linux-gnu)
+)
 
 
-target_link_libraries(Library_Management curl mysqlcppconn)
+add_executable(Library_Management main.cpp)
+
+
+
+target_link_libraries(
+        Library_Management
+        mysqlcppconn
+        database_interaction
+        utilities
+        models
+        curl
+)

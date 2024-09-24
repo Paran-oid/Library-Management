@@ -5,7 +5,7 @@
 #include "database_interaction.h"
 #include <mysql_driver.h>
 #include <mysql_connection.h>
-#include "../utilities/output.h"
+#include "output.h"
 #include <cppconn/resultset.h>
 #include <cppconn/prepared_statement.h>
 
