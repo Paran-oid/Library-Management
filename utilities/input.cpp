@@ -2,6 +2,7 @@
 // Created by aziz on 9/19/24.
 //
 
+#include <optional>
 #include <iostream>
 #include "input.h"
 #include "output.h"
