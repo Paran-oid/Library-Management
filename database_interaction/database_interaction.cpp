@@ -2,12 +2,13 @@
 // Created by aziz on 9/18/24.
 //
 
-#include "database_interaction.h"
+#include <optional>
 #include <mysql_driver.h>
 #include <mysql_connection.h>
-#include "output.h"
 #include <cppconn/resultset.h>
 #include <cppconn/prepared_statement.h>
+#include "output.h"
+#include "database_interaction.h"
 
 #define HOSTNAME "tcp://127.0.0.1:3306"
 #define USERNAME "root"
