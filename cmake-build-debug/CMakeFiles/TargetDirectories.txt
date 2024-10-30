@@ -1,6 +1,0 @@
-/home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/CMakeFiles/database_interaction.dir
-/home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/CMakeFiles/utilities.dir
-/home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/CMakeFiles/models.dir
-/home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/CMakeFiles/Library_Management.dir
-/home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/aziz/Documents/Programming/Learning/C++/Library-Management/cmake-build-debug/CMakeFiles/rebuild_cache.dir
